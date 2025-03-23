@@ -1,0 +1,82 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+}
+
+#title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+    color: azure;
+}
+
+#description {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: azure;
+}
+#temp-base {
+    color: azure;
+}
+
+#heatmap-container {
+    margin-bottom: 20px;
+}
+
+#tooltip {
+    position: absolute;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.cell {
+    stroke: none;
+    stroke-width: 0;
+}
+
+#x-axis path,
+#x-axis line,
+#y-axis path,
+#y-axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+#x-axis text,
+#y-axis text {
+    font-size: 0.9em;
+}
+.tick text {
+    fill: #fff;
+}
+.tick line {
+    stroke: #fff!important;
+}
+#text-years {
+    transform: translate(50%, 40px);
+    fill: #fff;
+}
+#legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#legend rect {
+    height: 20px;
+    margin-right: 2px;
+}
+
+#legend text {
+    font-size: 0.8em;
+    margin-left: 5px;
+}
